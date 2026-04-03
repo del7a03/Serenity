@@ -5,9 +5,17 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [ pkgs.git ];
+  packages = [ 
+    pkgs.git
+    pkgs.python312
+   ];
 
   # https://devenv.sh/languages/
+    languages.python = {
+      enable = true;
+      version = "3.12";
+      venv.enable = true;
+    };
   # languages.rust.enable = true;
 
   # https://devenv.sh/processes/
@@ -25,6 +33,7 @@
   enterShell = ''
     hello         # Run scripts directly
     git --version # Use packages
+    python --version
   '';
 
   # https://devenv.sh/tasks/
