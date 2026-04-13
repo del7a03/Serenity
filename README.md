@@ -12,7 +12,7 @@ A lightweight tiling window manager for Windows, built in Python.
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/del7a03/Serenity.git
    cd Serenity
    ```
 
